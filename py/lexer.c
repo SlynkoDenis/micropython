@@ -171,7 +171,7 @@ static void next_char(mp_lexer_t *lex) {
     } else
     #endif
     {
-        lex->chr2 = lex->reader.readbyte(lex->reader.data);
+        lex->chr2 = (unichar)lex->reader.readbyte(lex->reader.data);
     }
 
     if (lex->chr1 == '\r') {
@@ -310,7 +310,7 @@ static bool get_hex(mp_lexer_t *lex, size_t num_digits, mp_uint_t *result) {
     return true;
 }
 
-static void parse_string_literal(mp_lexer_t *lex, bool is_raw, bool is_fstring) {
+static void parse_string_literal(mp_lexer_t *lex, bool is_raw, __attribute__((unused)) bool is_fstring) {
     // get first quoting character
     char quote_char = '\'';
     if (is_char(lex, '\"')) {

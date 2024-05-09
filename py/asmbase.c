@@ -24,14 +24,14 @@
  * THE SOFTWARE.
  */
 
-#include <assert.h>
-#include <string.h>
-
 #include "py/obj.h"
 #include "py/misc.h"
 #include "py/asmbase.h"
 
 #if MICROPY_EMIT_MACHINE_CODE
+
+#include <assert.h>
+#include <string.h>
 
 void mp_asm_base_init(mp_asm_base_t *as, size_t max_num_labels) {
     as->max_num_labels = max_num_labels;

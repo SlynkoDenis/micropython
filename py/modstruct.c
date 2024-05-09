@@ -25,9 +25,6 @@
  * THE SOFTWARE.
  */
 
-#include <assert.h>
-#include <string.h>
-
 #include "py/runtime.h"
 #include "py/builtin.h"
 #include "py/objtuple.h"
@@ -35,6 +32,8 @@
 #include "py/parsenum.h"
 
 #if MICROPY_PY_STRUCT
+
+#include <string.h>
 
 /*
     This module implements most of character typecodes from CPython, with
@@ -275,4 +274,4 @@ const mp_obj_module_t mp_module_struct = {
 
 MP_REGISTER_EXTENSIBLE_MODULE(MP_QSTR_struct, mp_module_struct);
 
-#endif
+#endif  /* MICROPY_PY_STRUCT */

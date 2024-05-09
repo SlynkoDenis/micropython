@@ -24,13 +24,13 @@
  * THE SOFTWARE.
  */
 
-#include <stdio.h>
-#include <assert.h>
-
 #include "py/bc0.h"
 #include "py/emitglue.h"
 
 #if MICROPY_DEBUG_PRINTERS
+
+#include <stdio.h>
+#include <assert.h>
 
 #define DECODE_UINT { \
         unum = 0; \

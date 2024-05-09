@@ -25,14 +25,14 @@
  * THE SOFTWARE.
  */
 
-#include <string.h>
-#include <assert.h>
-
 #include "py/objstr.h"
 #include "py/objlist.h"
 #include "py/runtime.h"
 
 #if MICROPY_PY_BUILTINS_STR_UNICODE
+
+#include <string.h>
+#include <assert.h>
 
 static mp_obj_t mp_obj_new_str_iterator(mp_obj_t str, mp_obj_iter_buf_t *iter_buf);
 

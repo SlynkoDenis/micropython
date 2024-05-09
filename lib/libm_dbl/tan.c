@@ -13,7 +13,7 @@
  * Return tangent function of x.
  *
  * kernel function:
- *      __tan           ... tangent function on [-pi/4,pi/4]
+ *      __tan_k           ... tangent function on [-pi/4,pi/4]
  *      __rem_pio2      ... argument reduction routine
  *
  * Method.
@@ -57,7 +57,7 @@ double tan(double x)
 			FORCE_EVAL(ix < 0x00100000 ? x/0x1p120f : x+0x1p120f);
 			return x;
 		}
-		return __tan(x, 0.0, 0);
+		return __tan_k(x, 0.0, 0);
 	}
 
 	/* tan(Inf or NaN) is NaN */
@@ -66,5 +66,5 @@ double tan(double x)
 
 	/* argument reduction */
 	n = __rem_pio2(x, y);
-	return __tan(y[0], y[1], n&1);
+	return __tan_k(y[0], y[1], n&1);
 }

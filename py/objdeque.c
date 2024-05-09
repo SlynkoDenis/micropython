@@ -24,11 +24,11 @@
  * THE SOFTWARE.
  */
 
-#include <unistd.h> // for ssize_t
-
 #include "py/runtime.h"
 
 #if MICROPY_PY_COLLECTIONS_DEQUE
+
+#include <unistd.h> // for ssize_t
 
 typedef struct _mp_obj_deque_t {
     mp_obj_base_t base;

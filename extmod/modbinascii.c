@@ -24,15 +24,14 @@
  * THE SOFTWARE.
  */
 
-#include <stdio.h>
-#include <assert.h>
-#include <string.h>
-
 #include "py/runtime.h"
 #include "py/binary.h"
 #include "py/objstr.h"
 
 #if MICROPY_PY_BINASCII
+
+#include <stdio.h>
+#include <string.h>
 
 #if MICROPY_PY_BUILTINS_BYTES_HEX
 static mp_obj_t bytes_hex_as_bytes(size_t n_args, const mp_obj_t *args) {

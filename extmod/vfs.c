@@ -24,15 +24,15 @@
  * THE SOFTWARE.
  */
 
-#include <stdint.h>
-#include <string.h>
-
 #include "py/runtime.h"
 #include "py/objstr.h"
 #include "py/mperrno.h"
 #include "extmod/vfs.h"
 
 #if MICROPY_VFS
+
+#include <stdint.h>
+#include <string.h>
 
 #if MICROPY_VFS_FAT
 #include "extmod/vfs_fat.h"

@@ -24,13 +24,13 @@
  * THE SOFTWARE.
  */
 
-#include <stdio.h>
-#include <stdint.h>
-
 #include "py/obj.h"
 #include "py/mphal.h"
 
 #if MICROPY_PY_ONEWIRE
+
+#include <stdio.h>
+#include <stdint.h>
 
 /******************************************************************************/
 // Low-level 1-Wire routines

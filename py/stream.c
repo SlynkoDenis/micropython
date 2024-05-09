@@ -26,7 +26,8 @@
  */
 
 #include <string.h>
-#include <unistd.h>
+// #include <unistd.h>
+#include <types.h>
 
 #include "py/objstr.h"
 #include "py/stream.h"

@@ -24,11 +24,11 @@
  * THE SOFTWARE.
  */
 
-#include <stdio.h>
-
 #include "py/runtime.h"
 
 #if MICROPY_ENABLE_PYSTACK
+
+#include <stdio.h>
 
 void mp_pystack_init(void *start, void *end) {
     MP_STATE_THREAD(pystack_start) = start;

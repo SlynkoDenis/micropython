@@ -24,13 +24,13 @@
  * THE SOFTWARE.
  */
 
-#include <stdio.h>
-#include <string.h>
-
 #include "py/builtin.h"
 #include "py/objmodule.h"
 
 #if MICROPY_PY_BUILTINS_HELP
+
+#include <stdio.h>
+#include <string.h>
 
 const char mp_help_default_text[] =
     "Welcome to MicroPython!\n"

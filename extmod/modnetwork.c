@@ -24,15 +24,15 @@
  * THE SOFTWARE.
  */
 
-#include <stdio.h>
-#include <stdint.h>
-#include <string.h>
-
 #include "py/objlist.h"
 #include "py/runtime.h"
 #include "py/mphal.h"
 
 #if MICROPY_PY_NETWORK
+
+#include <stdio.h>
+#include <stdint.h>
+#include <string.h>
 
 #include "shared/netutils/netutils.h"
 #include "extmod/modnetwork.h"

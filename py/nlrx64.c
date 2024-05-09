@@ -52,7 +52,7 @@ __attribute__((optimize("omit-frame-pointer")))
 // nlr_push prelude should never push frame pointer register ebp onto the stack
 __attribute__((naked))
 #endif
-unsigned int nlr_push(nlr_buf_t *nlr) {
+unsigned int nlr_push(__attribute__((unused)) nlr_buf_t *nlr) {
     #if !USE_NAKED
     (void)nlr;
     #endif

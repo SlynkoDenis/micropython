@@ -24,15 +24,15 @@
  * THE SOFTWARE.
  */
 
-#include <stdio.h>
-#include <stdint.h>
-#include <string.h>
-
 #include "py/runtime.h"
 #include "py/stream.h"
 #include "extmod/modwebsocket.h"
 
 #if MICROPY_PY_WEBSOCKET
+
+#include <stdio.h>
+#include <stdint.h>
+#include <string.h>
 
 enum { FRAME_HEADER, FRAME_OPT, PAYLOAD, CONTROL };
 

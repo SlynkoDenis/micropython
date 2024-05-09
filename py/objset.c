@@ -24,14 +24,14 @@
  * THE SOFTWARE.
  */
 
-#include <stdbool.h>
-#include <string.h>
-#include <assert.h>
-
 #include "py/runtime.h"
 #include "py/builtin.h"
 
 #if MICROPY_PY_BUILTINS_SET
+
+#include <stdbool.h>
+#include <string.h>
+#include <assert.h>
 
 typedef struct _mp_obj_set_t {
     mp_obj_base_t base;

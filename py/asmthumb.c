@@ -24,14 +24,14 @@
  * THE SOFTWARE.
  */
 
-#include <stdio.h>
-#include <assert.h>
-#include <string.h>
-
 #include "py/mpconfig.h"
 
 // wrapper around everything in this file
 #if MICROPY_EMIT_THUMB || MICROPY_EMIT_INLINE_THUMB
+
+#include <stdio.h>
+#include <assert.h>
+#include <string.h>
 
 #include "py/mpstate.h"
 #include "py/asmthumb.h"

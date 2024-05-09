@@ -24,15 +24,15 @@
  * THE SOFTWARE.
  */
 
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
-#include <assert.h>
-
 #include "py/parsenum.h"
 #include "py/runtime.h"
 
 #if MICROPY_PY_BUILTINS_FLOAT
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include <assert.h>
 
 #include <math.h>
 #include "py/formatfloat.h"

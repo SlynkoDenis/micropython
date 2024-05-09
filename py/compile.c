@@ -227,7 +227,7 @@ static void mp_emit_common_start_pass(mp_emit_common_t *emit, pass_kind_t pass) 
     emit->ct_cur_child = 0;
 }
 
-static void mp_emit_common_populate_module_context(mp_emit_common_t *emit, qstr source_file, mp_module_context_t *context) {
+static void mp_emit_common_populate_module_context(mp_emit_common_t *emit, __attribute__((unused)) qstr source_file, mp_module_context_t *context) {
     #if MICROPY_EMIT_BYTECODE_USES_QSTR_TABLE
     size_t qstr_map_used = emit->qstr_map.used;
     mp_module_context_alloc_tables(context, qstr_map_used, emit->const_obj_list.len);

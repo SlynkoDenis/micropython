@@ -24,8 +24,6 @@
  * THE SOFTWARE.
  */
 
-#include <stdio.h>
-
 #include "py/builtin.h"
 #include "py/stackctrl.h"
 #include "py/runtime.h"
@@ -33,6 +31,8 @@
 #include "py/mphal.h"
 
 #if MICROPY_PY_MICROPYTHON
+
+#include <stdio.h>
 
 // Various builtins specific to MicroPython runtime,
 // living in micropython module

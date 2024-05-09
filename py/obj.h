@@ -27,6 +27,7 @@
 #define MICROPY_INCLUDED_PY_OBJ_H
 
 #include <assert.h>
+#include <stdarg.h>
 
 #include "py/mpconfig.h"
 #include "py/misc.h"

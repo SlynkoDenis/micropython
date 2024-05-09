@@ -24,17 +24,17 @@
  * THE SOFTWARE.
  */
 
-#include <stdio.h>
-#include <stdint.h>
-#include <string.h>
-#include <stdlib.h>
-
 #include "py/runtime.h"
 #include "py/stream.h"
 #include "py/mperrno.h"
 #include "py/mphal.h"
 
 #if MICROPY_PY_NETWORK_WIZNET5K
+
+#include <stdio.h>
+#include <stdint.h>
+#include <string.h>
+#include <stdlib.h>
 
 #include "shared/netutils/netutils.h"
 #include "extmod/modnetwork.h"

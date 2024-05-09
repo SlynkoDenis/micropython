@@ -24,10 +24,6 @@
  * THE SOFTWARE.
  */
 
-#include <stdio.h>
-#include <stdint.h>
-#include <string.h>
-
 #include "py/runtime.h"
 #include "py/stream.h"
 #include "py/builtin.h"
@@ -37,6 +33,10 @@
 #include "extmod/modwebsocket.h"
 
 #if MICROPY_PY_WEBREPL
+
+#include <stdio.h>
+#include <stdint.h>
+#include <string.h>
 
 #if 0 // print debugging info
 #define DEBUG_printf DEBUG_printf

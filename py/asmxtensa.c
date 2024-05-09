@@ -24,13 +24,13 @@
  * THE SOFTWARE.
  */
 
-#include <stdio.h>
-#include <assert.h>
-
 #include "py/runtime.h"
 
 // wrapper around everything in this file
 #if MICROPY_EMIT_XTENSA || MICROPY_EMIT_INLINE_XTENSA || MICROPY_EMIT_XTENSAWIN
+
+#include <stdio.h>
+#include <assert.h>
 
 #include "py/asmxtensa.h"
 

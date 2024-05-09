@@ -24,8 +24,6 @@
  * THE SOFTWARE.
  */
 
-#include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
 
 #include "py/mpconfig.h"
@@ -62,6 +60,8 @@
 #define realloc(ptr, n) gc_realloc(ptr, n, true)
 #define realloc_ext(ptr, n, mv) gc_realloc(ptr, n, mv)
 #else
+
+#include <stdlib.h>
 
 // GC is disabled.  Use system malloc/realloc/free.
 

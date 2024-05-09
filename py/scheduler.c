@@ -24,8 +24,6 @@
  * THE SOFTWARE.
  */
 
-#include <stdio.h>
-
 #include "py/mphal.h"
 #include "py/runtime.h"
 
@@ -268,7 +266,7 @@ void mp_event_wait_indefinite(void) {
 
 // Handle any pending MicroPython events and then suspends execution until the
 // next interrupt or event, or until timeout_ms milliseconds have elapsed.
-void mp_event_wait_ms(mp_uint_t timeout_ms) {
+void mp_event_wait_ms(__attribute__((unused)) mp_uint_t timeout_ms) {
     #if defined(MICROPY_EVENT_POLL_HOOK) && !MICROPY_PREVIEW_VERSION_2
     // For ports still using the old macros.
     MICROPY_EVENT_POLL_HOOK

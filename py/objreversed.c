@@ -24,12 +24,11 @@
  * THE SOFTWARE.
  */
 
-#include <stdlib.h>
-#include <assert.h>
-
 #include "py/runtime.h"
 
 #if MICROPY_PY_BUILTINS_REVERSED
+
+#include <stdlib.h>
 
 typedef struct _mp_obj_reversed_t {
     mp_obj_base_t base;

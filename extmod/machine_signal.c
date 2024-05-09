@@ -24,10 +24,11 @@
  * THE SOFTWARE.
  */
 
-#include <string.h>
 #include "py/runtime.h"
 
 #if MICROPY_PY_MACHINE_SIGNAL
+
+#include <string.h>
 
 #include "extmod/modmachine.h"
 #include "extmod/virtpin.h"

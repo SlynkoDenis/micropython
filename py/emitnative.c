@@ -42,10 +42,6 @@
 
 // for x in l[0:8]: can be compiled into a native loop if l has pointer type
 
-#include <stdio.h>
-#include <string.h>
-#include <assert.h>
-
 #include "py/emit.h"
 #include "py/nativeglue.h"
 #include "py/objfun.h"
@@ -60,6 +56,10 @@
 
 // wrapper around everything in this file
 #if N_X64 || N_X86 || N_THUMB || N_ARM || N_XTENSA || N_XTENSAWIN
+
+#include <stdio.h>
+#include <string.h>
+#include <assert.h>
 
 // C stack layout for native functions:
 //  0:                          nlr_buf_t [optional]

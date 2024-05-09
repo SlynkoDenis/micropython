@@ -42,7 +42,7 @@ int mp_os_dupterm_rx_chr(void);
 int mp_os_dupterm_tx_strn(const char *str, size_t len);
 void mp_os_deactivate(size_t dupterm_idx, const char *msg, mp_obj_t exc);
 #else
-static inline int mp_os_dupterm_tx_strn(const char *s, size_t l) {
+static inline int mp_os_dupterm_tx_strn(__attribute__((unused)) const char *s, __attribute__((unused)) size_t l) {
     return -1;
 }
 #endif

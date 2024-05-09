@@ -26,7 +26,7 @@
 
 #include <stdio.h>
 #include <string.h>
-#include <stdlib.h>
+// #include <stdlib.h>
 
 #include "py/runtime.h"
 #include "py/stream.h"

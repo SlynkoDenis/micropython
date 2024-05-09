@@ -24,14 +24,14 @@
  * THE SOFTWARE.
  */
 
-#include <stdlib.h>
-#include <stdio.h>
-#include <assert.h>
-
 #include "py/parsenum.h"
 #include "py/runtime.h"
 
 #if MICROPY_PY_BUILTINS_COMPLEX
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <assert.h>
 
 #include <math.h>
 #include "py/formatfloat.h"
@@ -259,4 +259,4 @@ mp_obj_t mp_obj_complex_binary_op(mp_binary_op_t op, mp_float_t lhs_real, mp_flo
     return mp_obj_new_complex(lhs_real, lhs_imag);
 }
 
-#endif
+#endif  /* MICROPY_PY_BUILTINS_COMPLEX */

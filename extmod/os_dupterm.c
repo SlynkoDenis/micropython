@@ -25,7 +25,6 @@
  * THE SOFTWARE.
  */
 
-#include <string.h>
 #include "py/mpconfig.h"
 
 #include "py/runtime.h"
@@ -35,6 +34,8 @@
 #include "extmod/misc.h"
 
 #if MICROPY_PY_OS_DUPTERM
+
+#include <string.h>
 
 #include "shared/runtime/interrupt_char.h"
 

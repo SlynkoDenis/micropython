@@ -8,7 +8,7 @@
  * is preserved.
  * ====================================================
  */
-/* __tan( x, y, k )
+/* __tan_k( x, y, k )
  * kernel tan function on ~[-pi/4, pi/4] (except on -0), pi/4 ~ 0.7854
  * Input x is assumed to be bounded by ~pi/4 in magnitude.
  * Input y is the tail of x.
@@ -63,7 +63,7 @@ static const double T[] = {
 pio4 =       7.85398163397448278999e-01, /* 3FE921FB, 54442D18 */
 pio4lo =     3.06161699786838301793e-17; /* 3C81A626, 33145C07 */
 
-double __tan(double x, double y, int odd)
+double __tan_k(double x, double y, int odd)
 {
 	double_t z, r, v, w, s, a;
 	double w0, a0;

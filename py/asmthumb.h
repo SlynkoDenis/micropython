@@ -80,7 +80,7 @@ static inline bool asm_thumb_allow_armv7m(asm_thumb_t *as) {
 
 #else
 
-static inline bool asm_thumb_allow_armv7m(asm_thumb_t *as) {
+static inline bool asm_thumb_allow_armv7m(__attribute__((unused)) asm_thumb_t *as) {
     return MICROPY_EMIT_THUMB_ARMV7M;
 }
 

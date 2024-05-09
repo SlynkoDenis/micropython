@@ -24,12 +24,12 @@
  * THE SOFTWARE.
  */
 
-#include <string.h>
-#include <assert.h>
-
 #include "py/mpz.h"
 
 #if MICROPY_LONGINT_IMPL == MICROPY_LONGINT_IMPL_MPZ
+
+#include <string.h>
+#include <assert.h>
 
 #define DIG_SIZE (MPZ_DIG_SIZE)
 #define DIG_MASK ((MPZ_LONG_1 << DIG_SIZE) - 1)

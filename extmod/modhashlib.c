@@ -24,12 +24,12 @@
  * THE SOFTWARE.
  */
 
-#include <assert.h>
-#include <string.h>
-
 #include "py/runtime.h"
 
 #if MICROPY_PY_HASHLIB
+
+#include <assert.h>
+#include <string.h>
 
 #if MICROPY_SSL_MBEDTLS
 #include "mbedtls/version.h"

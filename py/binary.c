@@ -26,10 +26,9 @@
  */
 
 #include <stdint.h>
-#include <stdlib.h>
+// #include <stdlib.h>
 #include <stddef.h>
 #include <string.h>
-#include <assert.h>
 
 #include "py/binary.h"
 #include "py/smallint.h"

@@ -24,12 +24,12 @@
  * THE SOFTWARE.
  */
 
-#include <assert.h>
-#include <string.h>
-
 #include "py/runtime.h"
 
 #if MICROPY_PY_RANDOM
+
+#include <assert.h>
+#include <string.h>
 
 // Work out if the seed will be set on import or not.
 #if MICROPY_MODULE_BUILTIN_INIT && defined(MICROPY_PY_RANDOM_SEED_INIT_FUNC)

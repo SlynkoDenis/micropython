@@ -25,8 +25,7 @@
  * THE SOFTWARE.
  */
 
-#include <stdlib.h>
-#include <assert.h>
+// #include <stdlib.h>
 
 #include "py/runtime.h"
 #include "py/bc.h"

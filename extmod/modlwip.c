@@ -26,9 +26,6 @@
  * THE SOFTWARE.
  */
 
-#include <string.h>
-#include <stdio.h>
-
 #include "py/objlist.h"
 #include "py/runtime.h"
 #include "py/stream.h"
@@ -36,6 +33,9 @@
 #include "py/mphal.h"
 
 #if MICROPY_PY_LWIP
+
+#include <string.h>
+#include <stdio.h>
 
 #include "shared/netutils/netutils.h"
 #include "modnetwork.h"

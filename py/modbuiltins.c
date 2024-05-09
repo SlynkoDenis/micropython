@@ -24,7 +24,6 @@
  * THE SOFTWARE.
  */
 
-#include <stdio.h>
 #include <assert.h>
 
 #include "py/smallint.h"

@@ -24,13 +24,14 @@
  * THE SOFTWARE.
  */
 
-#include <stdio.h>
-#include <string.h>
 #include "py/runtime.h"
 #include "py/objstr.h"
 #include "py/mphal.h"
 
 #if MICROPY_PY_NETWORK_CYW43
+
+#include <stdio.h>
+#include <string.h>
 
 #include "lwip/netif.h"
 #include "extmod/network_cyw43.h"

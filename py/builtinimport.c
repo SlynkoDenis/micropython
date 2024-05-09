@@ -26,10 +26,6 @@
  * THE SOFTWARE.
  */
 
-#include <stdio.h>
-#include <string.h>
-#include <assert.h>
-
 #include "py/compile.h"
 #include "py/objmodule.h"
 #include "py/persistentcode.h"
@@ -46,6 +42,10 @@
 #endif
 
 #if MICROPY_ENABLE_EXTERNAL_IMPORT
+
+#include <stdio.h>
+#include <string.h>
+#include <assert.h>
 
 // Must be a string of one byte.
 #define PATH_SEP_CHAR "/"

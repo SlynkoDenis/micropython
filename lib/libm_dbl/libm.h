@@ -90,7 +90,7 @@ do {                                              \
 
 int __rem_pio2(double, double*);
 int __rem_pio2_large(double*, double*, int, int, int);
-double __sin(double, double, int);
-double __cos(double, double);
-double __tan(double, double, int);
+double __sin_k(double, double, int);
+double __cos_k(double, double);
+double __tan_k(double, double, int);
 double __expo2(double);

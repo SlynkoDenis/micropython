@@ -45,13 +45,13 @@ static double sinpi(double x)
 	switch (n) {
 	default: /* case 4 */
 	case 0:
-		return __sin(x, 0, 0);
+		return __sin_k(x, 0, 0);
 	case 1:
-		return __cos(x, 0);
+		return __cos_k(x, 0);
 	case 2:
-		return __sin(-x, 0, 0);
+		return __sin_k(-x, 0, 0);
 	case 3:
-		return -__cos(x, 0);
+		return -__cos_k(x, 0);
 	}
 }
 
